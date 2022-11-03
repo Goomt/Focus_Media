@@ -13,7 +13,7 @@ import javax.persistence.Column;
 @AllArgsConstructor
 public class MemberPostDto {
     //한글 최소 2-4자, 영어사용 가능
-    @Pattern(regexp ="/^[가-힣]{2,4}|^([ \\u00c0-\\u01ffa-zA-Z'\\-])+$")
+    @Pattern(regexp ="^[가-힣]{2,4}|^([ \\u00c0-\\u01ffa-zA-Z'\\-])+$")
     @NotBlank(message = "Name should not be blank")
     private String name;
 
