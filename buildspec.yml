@@ -7,7 +7,6 @@ phases:
   build:
     commands:
       - echo Build Starting on `date`
-      - cd Focus_Media
       - chmod +x ./gradlew
       - ./gradlew build
   post_build:
