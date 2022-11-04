@@ -70,7 +70,7 @@ jobs:
      # CodeDeploy에게 배포 명령을 내립니다.
     - name: Code Deploy
       run: >
-       aws deploy create-deployment --application-name focus-media-sungmin
+       aws deploy create-deployment --application-name FM
        --deployment-config-name CodeDeployDefault.AllAtOnce
        --deployment-group-name fm-codedeploy-group
-       --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=practice-deploy.zip
+       --s3-location bucket=$S3_BUCKET_NAME,bundleType=zip,key=fm-deploy.zip
