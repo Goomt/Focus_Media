@@ -12,10 +12,10 @@ phases:
       - ./gradlew build
   post_build:
     commands:
-      - echo $(basename ./Focus_Media/build/libs/*.jar)
+      - echo $(basename ./build/libs/*.jar)
 artifacts:
   files:
-    - Focus_Media/build/libs/*.jar
-    - Focus_Media/scripts/**
-    - Focus_Media/appspec.yml
+    - build/libs/*.jar
+    - scripts/**
+    - appspec.yml
   discard-paths: yes
